@@ -1,0 +1,17 @@
+@import "react-slideshow-image/dist/styles.css";
+
+
+
+ .spanStyle {
+    padding: 20px;
+    background: #efefef;
+    color: #000000;
+  }
+  
+  .divStyle {
+    display: flex;
+    align-Items: center;
+    justify-Content: center;
+    background-Size: cover;
+    height: 400px;
+  }

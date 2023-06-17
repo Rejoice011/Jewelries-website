@@ -1,0 +1,202 @@
+
+.necklace-img img {
+    max-width: 100%;
+
+}
+.necklace{
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    flex: 25%;
+    justify-content: center;
+  }
+  
+  
+  
+  .overlay {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    max-width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    
+  }
+
+  /* img{
+    border-radius: 20px;
+  } */
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .image{
+    width: 80%;
+    display: block;
+    
+  }
+  .text img{
+    width: 100%;
+    
+    /* height: 300px; */
+    
+    
+  }
+  
+  .text {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    transform: translate(-30%, -30%);
+    -ms-transform: translate(-30%, -30%); 
+  }
+  .necklace-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+  .necklace-wrapper2{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+  .necklace-wrapper3{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+  .necklace-wrapper4{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+    @media screen and (max-width:996px) {
+       .necklace{
+        overflow: hidden;
+       }
+       
+       /* .image{
+        width: 50%; 
+      } 
+       */
+      .container img {
+        
+        max-width: 100%;
+        text-align: center;
+        text-align: justify;
+        flex: 50%;
+       
+      }
+      .necklace-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 50%;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 50%; 
+        }
+        .necklace-wrapper2{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 50%;
+        }
+        .necklace-wrapper3{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 50%;
+        }
+        .necklace-wrapper4{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 50%;
+        }
+        .emerald-img img {
+            max-width: 50%;
+          }
+          .emeralds-text {
+            max-width: 100%;
+          }
+
+  .emeralds-wrapper{
+   justify-content: center;
+  flex-direction: column;
+   max-width: 100%;
+  
+  }
+    }
+
+  .emeralds-wrapper{
+    display: flex;
+   flex: 50%;
+   flex-wrap: wrap;
+   margin-left: 90px;
+   width: 100%;
+  
+  }
+  
+  .emeralds-text{
+    background-color: var(--heading-color);
+    max-width: 45%;
+  
+  }
+  .emeralds-text h1 p .btn{
+    margin-top: 90px;
+    justify-content: center;
+
+  }
+  .emerald-img img {
+    max-width: 75%;
+  }
+
+  @media screen and (max-width:400px) {
+   
+    .emeralds-wrapper{
+   
+   flex: 100%;
+   flex-wrap: wrap;
+   max-width: 100%;
+   justify-content: center;
+  }
+     .emerald-img img {
+    max-width: 100%;
+  }
+
+     .necklace-wrapper{
+      flex-direction: column;
+    
+     }
+     .necklace-wrapper2{
+      flex-direction: column;
+     }
+     .necklace-wrapper3{
+      flex-direction: column;
+     }
+     .necklace-wrapper4{
+      flex-direction: column;
+     }
+     .emerald-img img {
+      max-width: 70%;
+    }
+    .emeralds-text {
+      max-width: 80%;
+    }
+    .emeralds-wrapper{
+      justify-content: center;
+     flex-direction: column;
+      max-width: 100%;
+      margin-right:-10px;
+  }
+}

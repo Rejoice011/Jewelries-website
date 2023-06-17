@@ -1,0 +1,138 @@
+
+.bracelets{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+    justify-content: center;
+  }
+  
+  .container {
+      position: relative;
+      width: 100%;
+      flex: 25%;
+      justify-content: center;
+    }
+    
+    
+    
+    .overlay {
+      position: absolute;
+      top: 40px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      max-width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      
+    }
+  
+    /* img{
+      border-radius: 20px;
+    } */
+    
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    .image{
+      width: 80%;
+      display: block;
+      
+    }
+    .text img{
+      width: 100%;
+      
+      /* height: 300px; */
+      
+      
+    }
+    
+    .text {
+      color: white;
+      font-size: 10px;
+      position: absolute;
+      top: 22%;
+      left: 25%;
+      transform: translate(-30%, -30%);
+      -ms-transform: translate(-30%, -30%); 
+    }
+    .bracelets-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      flex: 25%;
+    }
+    .bracelets-wrapper2{
+      display: flex;
+      flex-wrap: wrap;
+      flex: 25%;
+    }
+    .bracelets-wrapper3{
+      display: flex;
+      flex-wrap: wrap;
+      flex: 25%;
+    }
+   
+    @media screen and (max-width:996px) {
+        .necklace{
+         overflow: hidden;
+        }
+        
+        /* .image{
+         width: 50%; 
+       } 
+        */
+       .container img {
+         
+         max-width: 100%;
+         text-align: center;
+         text-align: justify;
+         flex: 50%;
+        
+       }
+       .bracelets-wrapper{
+             display: flex;
+             flex-wrap: wrap;
+             flex: 50%;
+         }
+         .container{
+             display: flex;
+             flex-wrap: wrap;
+             flex: 50%; 
+         }
+         .bracelets-wrapper2{
+             display: flex;
+             flex-wrap: wrap;
+             flex: 50%;
+         }
+         .bracelets-wrapper3{
+             display: flex;
+             flex-wrap: wrap;
+             flex: 50%;
+         }     
+     }
+
+     @media screen and (max-width:400px) {
+    
+         .bracelets-wrapper{
+          flex-direction: column;
+        
+         }
+         .bracelets-wrapper2{
+          flex-direction: column;
+         }
+         .bracelets-wrapper3{
+          flex-direction: column;
+         }
+         .large-img-wrapper img{
+            max-width: 100%;
+            /* height: 790px; */
+            /* justify-content: center; */
+        }
+       
+    }
+    .large-img-wrapper img{
+        max-width: 100%;
+        /* height: 790px; */
+        /* justify-content: center; */
+    }

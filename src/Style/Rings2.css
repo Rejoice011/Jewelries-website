@@ -1,0 +1,141 @@
+
+.rings{
+  padding: 1rem;
+ box-sizing: border-box;
+ justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    flex: 25%;
+    justify-content: center;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    max-width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    
+  }
+
+  /* img{
+    border-radius: 20px;
+  } */
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .image{
+    width: 75%;
+    
+  }
+  .text img{
+    width: 95%;
+    
+    /* height: 300px; */
+    
+    
+  }
+  
+  .text {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    transform: translate(-30%, -30%);
+    -ms-transform: translate(-30%, -30%); 
+  }
+  .ring-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+  .ring-wrapper2{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+  .ring-wrapper3{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+  .ring-wrapper4{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+  }
+
+  @media screen and (max-width:996px) {
+    .rings{
+     overflow: hidden;
+    }
+    
+    /* .image{
+     width: 50%; 
+   } 
+    */
+   .container img {
+     
+     max-width: 100%;
+     text-align: center;
+     text-align: justify;
+     flex: 50%;
+    
+   }
+   .ring-wrapper{
+         display: flex;
+         flex-wrap: wrap;
+         flex: 50%;
+     }
+     .container{
+         display: flex;
+         flex-wrap: wrap;
+         flex: 50%; 
+     }
+     .ring-wrapper2{
+         display: flex;
+         flex-wrap: wrap;
+         flex: 50%;
+     }
+     .ring-wrapper3{
+         display: flex;
+         flex-wrap: wrap;
+         flex: 50%;
+     }
+      .ring-wrapper4{
+         display: flex;
+         flex-wrap: wrap;
+         flex: 50%;
+     }
+ }
+
+ @media screen and (max-width:400px) {
+     .ring-wrapper {
+      flex-direction: column;
+    
+     }
+     .ring-wrapper2 {
+      flex-direction: column;
+     }
+     .ring-wrapper3  {
+      flex-direction: column;
+     }
+      .ring-wrapper4  {
+      flex-direction: column;
+     }  
+}
