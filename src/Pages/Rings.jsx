@@ -8,6 +8,7 @@ import Footer from '../Component/Footer'
 const Rings = () => {
   return (
     <>
+        <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=0f4d76c1b5776' async='true'></script> 
     <Rings1/>
     <Rings2/>
     <Footer/>
