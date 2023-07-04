@@ -10,7 +10,8 @@ import Gifts from './Pages/Gifts';
 import { GiGemChain } from "react-icons/gi";
 import {FaBars} from 'react-icons/fa'
 import { useEffect, useState } from 'react';
-
+import Contactus from './UI/Contactus';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -85,12 +86,14 @@ function App() {
 
     
     <Routes>
+      
       <Route path='/' element={<Home/>} />
       <Route path='/earrings' element={<EarRings/>} />
       <Route path='/necklaces' element={<Necklaces/>} />
       <Route path='/rings' element={<Rings/>} />
       <Route path='/bracelets' element={<Bracelets/>} />
       <Route path='/gifts' element={<Gifts/>} />
+      <Route path='/contactus' element={<Contactus/>} />
       
       </Routes>
     </>

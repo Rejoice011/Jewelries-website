@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaLinkedin} from 'react-icons/fa'
 import '../Style/Footer.css'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div>
@@ -9,15 +10,11 @@ const Footer = () => {
     <div className="footer">
      
         <div className="footer-text1">
-          <h3>Contact Us</h3>
-           {/* <p>Monday - Friday</p> <br/> */}
-           {/* <p>8.30am - 7.00pm</p> */}
-            {/* <br/> <br/> */}
+          <Link to="/contactus">Contact Us</Link>
             <p> Chat</p> <br/> 
             <p>Email</p>
             <br/> 
             <p>877 565 5964</p>
-            {/* <br/> */}
             <div className="icon-wrapper">
             <i className='FaFacebookSquare'><FaFacebookSquare/></i> 
            <i className="FaTwitterSquare"><FaTwitterSquare/></i>
@@ -45,12 +42,7 @@ const Footer = () => {
             <p>Stylin Help</p>
             <br/>
             <p>Care & Cleaning</p>
-            {/* <div className="icon-wrapper">
-            <i className='FaFacebookF'><FaFacebookF/></i>
-           <i className="FaTwitter"><FaTwitter/></i>
-           <i className="FaInstagram"><FaInstagram/></i>
-           <i className="FaLinkedinIn"><FaLinkedinIn/></i>
-           </div> */}
+           
            
         </div>
         </div>
